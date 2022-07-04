@@ -26,6 +26,7 @@ public class BankAccount {
         System.out.println("Empty constructor called");
     }
 
+
     public BankAccount(double accountNumber, double balance, String customerName, String email, String phoneNumber) {
         this.accountNumber = accountNumber;
         this.balance = balance;
@@ -34,6 +35,16 @@ public class BankAccount {
         this.phoneNumber = phoneNumber;
     }
 
+    /*
+    * another constructor, but with only a select default fields
+    public BankAccount(String customerName, String email, String phoneNumber) {
+    *   this(99999, 100.55, customerName, email, phoneNumber)
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+    *
+    * */
     public double getAccountNumber(){
         return this.accountNumber;
     }
